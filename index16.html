@@ -1211,6 +1211,51 @@
 						<!--//col-->
 					</div>
 					<!--//row-->
+
+					<div class="row">
+						<div class="lgx-subscriber-area ">
+							<div class="container">
+								<div class="lgx-subscriber-inner">  <!--lgx-subscriber-inner-indiv-->
+									<h3 class="heading" style="text-align:center;">Upload Resume</h3>
+									<h4 class="heading" style="text-align:center;">Let our hiring partners know you are actively looking for work or open to new job offers.</h4>
+									<div class="section-btn-area">
+									<button type="button" data-toggle="modal" data-target="#resumeModal" class="lgx-btn"><span>Upload</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Resume Modal -->
+					<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="resumeModalLabel">Upload Resume</h4>
+					      </div>
+					      <div class="modal-body">
+
+									<form class="lgx-contactform">
+                      <div class="form-group">
+                          <input type="text" id="userName" class="form-control lgxname" placeholder="Enter Your Name" required="" aria-required="true">
+                      </div>
+                      <div class="form-group">
+                          <input type="email" id="userEmail" class="form-control lgxemail" placeholder="Enter email" required="" aria-required="true">
+                      </div>
+											<div class="form-group">
+												<input type="file" id="resumeUpload" placeholder="Select Resume..." class="form-control lgx-input-form form-control"  />
+											</div>
+                      <button type="button" id="btnResumeSubmit" class="lgx-btn hvr-glow hvr-radial-out lgxsend lgx-send" onclick="saveResumeToFireBase()"><span>Upload</span></button>
+                  </form>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 					<!-- <div class="section-btn-area">
 						<a class="lgx-btn" href="#">Become A Sponsor</a>
 					</div> -->
@@ -1305,51 +1350,6 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="row">
-						<div class="lgx-subscriber-area ">
-							<div class="container">
-								<div class="lgx-subscriber-inner">  <!--lgx-subscriber-inner-indiv-->
-									<h3 class="subscriber-title" style="text-align:center;">Upload Resume</h3>
-									<h4 class="subscriber-title" style="text-align:center;">Let our hiring partners know you are actively looking for work or open to new job offers.</h4>
-									<div class="section-btn-area">
-									<button type="button" data-toggle="modal" data-target="#resumeModal" class="lgx-btn"><span>Upload</span></button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<!-- Resume Modal -->
-					<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="resumeModalLabel">Upload Resume</h4>
-					      </div>
-					      <div class="modal-body">
-									<div class="form-group form-group-email">
-										<input type="text" id="userName" placeholder="Full Name" class="form-control lgx-input-form form-control"  />
-									</div>
-									<div class="form-group form-group-email">
-										<input type="email" id="userEmail" placeholder="Email Address" class="form-control lgx-input-form form-control"  />
-									</div>
-									<div class="form-group form-group-email">
-										<input type="file" id="resumeUpload" placeholder="Select Resume..." class="form-control lgx-input-form form-control"  />
-									</div>
-									<div class="form-group form-group-submit">
-										<button type="submit" id="btnResumeSubmit" class="lgx-btn lgx-submit" onclick="saveResumeToFireBase()"><span>Upload</span></button>
-									</div>
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-
 				</div><!-- //.CONTAINER -->
 			</div><!-- //.INNER -->
 		</div>
