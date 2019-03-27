@@ -30,12 +30,6 @@ function saveResumeToFireBase(){
 }
 
 function submitContactForm() {
-  /*firebase.database().ref('users/' + userId).set({
-    username: name,
-    email: email,
-    profile_picture : imageUrl
-  });*/
-
   const contactName = $('#contactName').val();
   const contactEmail = $('#contactEmail').val();
   const contactSubject = $('#contactSubject').val();
