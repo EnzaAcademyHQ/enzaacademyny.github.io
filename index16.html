@@ -117,7 +117,7 @@
 					<div id="navbar" class="navbar-collapse collapse">
 						<div class="lgx-nav-right navbar-right">
 							<div class="lgx-cart-area">
-								<a class="lgx-btn lgx-btn-red" href="#lgx-registration">Get My Ticket</a>
+								<a class="lgx-btn lgx-btn-red" href="https://www.eventbrite.com/e/hackfest-2019-tickets-55113767763" target="blank">Get My Ticket</a>
 							</div>
 						</div>
 						<ul class="nav navbar-nav lgx-nav navbar-right">
@@ -126,7 +126,7 @@
 							<li><a class="lgx-scroll" href="#lgx-sponsors">Sponsors</a></li>
 							<li><a class="lgx-scroll" href="#hf-faq">FAQ</a></li>
 							<!-- <li><a class="lgx-scroll" href="#lgx-news">News</a></li> -->
-							<li><a class="lgx-scroll" href="contact.html">Contact</a></li>
+							<li><a class="lgx-scroll" href="#hf-contact">Contact</a></li>
 						</ul>
 					</div><!--/.nav-collapse -->
 				</nav>
@@ -1181,7 +1181,7 @@
 					<!--//main row-->
 					<div class="row">
 						<div class="col-xs-12">
-							<h3 class="sponsored-heading third-heading">Platinum Sponsors</h3>
+							<h3 class="sponsored-heading first-heading">Platinum Sponsors</h3>
 							<div class="sponsors-area">
 								<div class="single">
 									<a class="" href="#"><img src="assets/img/ms-logo.png" alt="sponsor"/></a>
@@ -1199,7 +1199,7 @@
 					<!--//row-->
 					<div class="row">
 						<div class="col-xs-12">
-						<h3 class="sponsored-heading first-heading">Gold Sponsors</h3>
+						<h3 class="sponsored-heading third-heading">Gold Sponsors</h3>
 							<div class="sponsors-area">
 								<div class="single">
 									<a class="" href="#"><img src="assets/img/fb-logo.png" alt="sponsor"/></a>
@@ -1293,23 +1293,8 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="lgx-registration-area"> <!--lgx-registration-area2 lgx-registration-area3 "-->
+
 								<div class="lgx-single-registration">
-									<div class="lgx-single-registration-inner">
-										<div class="single-top">
-											<h3 class="title">HackFest Hackers</h3>
-											<h4 class="price">Sold Out</h4>
-										</div>
-										<div class="single-bottom">
-											<ul class="list-unstyled list">
-												<li>Open to all young professionals!</li>
-												<li>Coding experience IS NOT a requirement.</li>
-												<li>(Automatically registered for Demo Day)</li>
-											</ul>
-											<a class="lgx-btn" href="https://www.eventbrite.com/e/hackfest-2019-tickets-55113767763" target="blank"><span>Join The Waitlist</span></a>
-										</div>
-									</div>
-								</div>
-								<div class="lgx-single-registration recommended">
 									<div class="lgx-single-registration-inner">
 										<div class="single-top">
 											<h3 class="title">Mentors & Volunteers</h3>
@@ -1323,6 +1308,21 @@
 												<li>(Anyone interested is welcome.)</li>
 											</ul>
 											<a class="lgx-btn" href="https://www.eventbrite.com/e/hackfest-2019-tickets-55113767763" target="blank"><span>Get This Ticket</span></a>
+										</div>
+									</div>
+								</div>
+								<div class="lgx-single-registration recommended">
+									<div class="lgx-single-registration-inner">
+										<div class="single-top">
+											<h3 class="title">HackFest Hackers</h3>
+										</div>
+										<div class="single-bottom">
+											<ul class="list-unstyled list">
+												<li>Open to all young professionals!</li>
+												<li>Coding experience IS NOT a requirement.</li>
+												<li>(Automatically registered for Demo Day)</li>
+											</ul>
+											<a class="lgx-btn" href="https://www.eventbrite.com/e/hackfest-2019-tickets-55113767763" target="blank"><span>Join The Waitlist</span></a>
 										</div>
 									</div>
 								</div>
@@ -1523,6 +1523,71 @@
 		</div>
 	</section>
 	<!--faq END-->
+
+	<!--TESTIMONIALS -->
+	<section>
+		<div id="hf-contact" class="lgx-testimonial">
+			<div class="lgx-inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="lgx-heading">
+								<h2 class="heading">Contact</h2>
+								<h3 class="subheading">Additional questions/comments? Reach out to us!</h3>
+							</div>
+						</div>
+					</div>
+					<!--//.ROW-->
+					<div class="row">
+            <div class="col-sm-12 col-md-6 col-md-offset-3">
+                <form method="post" class="lgx-contactform" action="php/form-handler.php" novalidate="novalidate">
+                    <div class="form-group">
+                        <input type="text" name="lgxname" class="form-control lgxname" id="contactName" placeholder="Enter Your Name" required="" aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="lgxemail" class="form-control lgxemail" id="contactEmail" placeholder="Enter email" required="" aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="lgxsubject" class="form-control lgxsubject" id="contactSubject" placeholder="Subject" required="" aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control lgxmessage" name="lgxmessage" id="contactBody" rows="5" placeholder="We expect drop some line from you..." required="" aria-required="true"></textarea>
+                    </div>
+
+
+                    <button type="submit" name="submit" id="btnContactSubmit" value="contact-form" class="lgx-btn hvr-glow hvr-radial-out lgxsend lgx-send" onclick="submitContactForm()"><span>Send Message</span></button>
+                </form>
+
+                <!-- MODAL SECTION -->
+                <div id="lgx-form-modal" class="modal fade lgx-form-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content lgx-modal-content">
+                            <div class="modal-header lgx-modal-header">
+                                <button type="button" class="close brand-color-hover" data-dismiss="modal" aria-label="Close">
+                                    <i class="fa fa-power-off"></i>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="alert lgx-form-msg" role="alert"></div>
+                            </div> <!--//MODAL BODY-->
+
+                        </div>
+                    </div>
+                </div> <!-- //MODAL -->
+
+            </div> <!--//.COL-->
+        </div>
+				</div><!-- //.CONTAINER -->
+			</div><!-- //.INNER -->
+		</div>
+	</section>
+	<!--contact END-->
+
+
 
 	<!--GOOGLE MAP-->
 	<div class="innerpage-section">
