@@ -28,3 +28,25 @@ function saveResumeToFireBase(){
   $("#resumeUpload").val("");
   $("#btnResumeSubmit").attr("disabled", "disabled");
 }
+
+function submitContactForm() {
+  const contactName = $('#contactName').val();
+  const contactEmail = $('#contactEmail').val();
+  const contactSubject = $('#contactSubject').val();
+  const contactBody = $('#contactBody').val();
+
+  const ref = firebase.database().ref();
+  ref.push({
+    name: contactName,
+    email: contactEmail,
+    subject: contactSubject,
+    body: contactBody
+  });
+
+  $("#btnContactSubmit").html("Success");
+  $('#contactName').val("");
+  $('#contactEmail').val("");
+  $('#contactSubject').val("");
+  $('#contactBody').val("");
+  $("#btnContactSubmit").attr("disabled", "disabled");
+}
