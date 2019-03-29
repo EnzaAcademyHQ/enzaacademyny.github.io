@@ -1,11 +1,7 @@
-.faq-heading{
-  font-family: Oswald,sans-serif;
-  font-size: 30px;
-  color:white;
+#hf-faq .panel-group .panel {
+  border-radius: 5px;
 }
-.faq-body{
-  font-family: Poppins,sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-  color:white;
+
+#hf-faq .panel-title {
+  font-size: 28px;
 }
